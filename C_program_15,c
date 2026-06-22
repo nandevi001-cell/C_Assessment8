@@ -1,0 +1,22 @@
+#include<stdio.h>
+int disp_singledigit_prime(int);
+int main()
+{
+	int x,y;
+	printf("Enter a number:");
+	scanf("%d",&x);
+	y=disp_singledigit_prime(x);
+	printf("Total:%d",y);
+}
+int disp_singledigit_prime(int x)
+{
+	int total=0,i;
+	while(x>0)
+	{
+		i=x%10;
+		if(i==2 || i==3 || i==5 || i==7)
+		total=total+1;
+		x=x/10;
+	}
+	return total;
+}

@@ -1,12 +1,12 @@
 #include<stdio.h>
-int count_total_digits(int);
+int disp_sum_all_digits(int);
 int main()
 {
 	int x,y;
-	y=count_total_digits(x);
+	y=disp_sum_all_digits(x);
 	printf("Total number of digits:%d",y);
 }
-int count_total_digits(int x)
+int disp_sum_all_digits(int x)
 {
 	int total=0,ones;
 	printf("Enter a number:");
